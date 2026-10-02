@@ -4061,7 +4061,7 @@ def pagina_sem_acesso():
         return
 
     # ── colunas base para exibição ────────────────────────────────────────────
-    COLS_BASE = ["Código", "Razão Social", "CNPJ"]
+    COLS_BASE = ["Código", "Razão Social", "CNPJ", "Município", "Estado"]
 
     def _prepara(df_fil):
         cols = [c for c in COLS_BASE if c in df_fil.columns]
